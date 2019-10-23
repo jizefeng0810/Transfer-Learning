@@ -1,0 +1,14 @@
+use KNeighborsClassifier(Xs,Ys) to predict Xt
+Ds(label)       Dt(unlabel)      acc
+caltech.mat--   amazon.mat:     0.23695198329853862
+caltech.mat--   webcam.mat:     0.2576271186440678
+caltech.mat--   dslr.mat:       0.25477707006369427
+amazon.mat--    caltech.mat:    0.26001780943900266
+amazon.mat--    webcam.mat:     0.2983050847457627
+amazon.mat--    dslr.mat:       0.25477707006369427
+webcam.mat--    caltech.mat:    0.19857524487978628
+webcam.mat--    amazon.mat:     0.22964509394572025
+webcam.mat--    dslr.mat:       0.5923566878980892
+dslr.mat--      caltech.mat:    0.26268922528940336
+dslr.mat--      amazon.mat:     0.2849686847599165
+dslr.mat--      webcam.mat:     0.6338983050847458
