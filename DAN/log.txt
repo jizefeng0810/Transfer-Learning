@@ -1,0 +1,34 @@
+﻿resnet50后面加了2层FC，下面是分别2层MMD、1层MMD和无MMD的准确度
+注意修改网络的transfer_loss计算和train里面的loss
+
+
+DAN-2:
+dslr --> amazon: max correct: 1886, accuracy 66.00%
+dslr --> webcam: max correct: 782, accuracy 98.00%
+amazon --> dslr: max correct: 415, accuracy 83.00%
+amazon --> webcam: max correct: 626, accuracy 78.00%
+webcam --> amazon: max correct: 1875, accuracy 66.00%
+webcam --> dslr: max correct: 497, accuracy 99.00%
+
+
+DAN-1:
+dslr --> amazon: max correct: 1885, accuracy 66.00%
+dslr --> webcam: max correct: 783, accuracy 98.00%
+amazon --> dslr: max correct: 415, accuracy 83.00%
+amazon --> webcam: max correct: 632, accuracy 79.00%
+webcam --> amazon: max correct: 1877, accuracy 66.00%
+webcam --> dslr: max correct: 497, accuracy 99.00%
+
+
+Not-DAN:
+dslr --> amazon: max correct: 1802, accuracy 63.00%
+dslr --> webcam: max correct: 769, accuracy 96.00%
+amazon --> dslr: max correct: 404, accuracy 81.00%
+amazon --> webcam: max correct: 624, accuracy 78.00%
+webcam --> amazon: max correct: 1859, accuracy 65.00%
+webcam --> dslr: max correct: 496, accuracy 99.00%
+
+
+
+
+趋于过拟合状态，transfer_loss虽然一直在上升，但是总体的泛化能力基本稳定
